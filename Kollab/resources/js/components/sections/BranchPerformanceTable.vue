@@ -68,9 +68,11 @@ export default {
     }
   },
   mounted () {
+    // method to get api data
     this.getData
   },
   methods: {
+    // method to get api data
     async getData () {
       try {
         const response = await axios.get('/branch');

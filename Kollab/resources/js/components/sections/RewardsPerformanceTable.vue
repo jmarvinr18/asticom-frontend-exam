@@ -67,6 +67,7 @@ export default {
     }
   },
   mounted () {
+    // method to get api data
     this.getData
   },
   methods: {

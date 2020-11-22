@@ -140,6 +140,7 @@ export default {
     }
   },
   mounted () {
+    // method to get api data
     this.getSales
     this.getEngagement
     this.getAcquisitionData
