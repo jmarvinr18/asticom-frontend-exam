@@ -67,7 +67,19 @@ export default {
       // selectedRow: []
     }
   },
+  mounted () {
+    this.getData
+  },
   methods: {
+    async getData () {
+      try {
+        const response = await axios.get('/branch');
+        this.tableData = response.data
+        console.log(response);
+      } catch (error) {
+        console.error(error);
+      }
+    },
     indexMethod (index) {
       return index;
     }

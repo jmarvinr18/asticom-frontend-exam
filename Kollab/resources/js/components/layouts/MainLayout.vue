@@ -12,12 +12,17 @@
           >
             <option value="">Last 7 days</option>
           </select>
-          <select
-            name=""
-            id=""
+          <el-date-picker
+            v-model="value2"
+            type="daterange"
+            format="d MMM yyyy"
+            size="medium"
+            align="right"
+            start-placeholder="Start Date"
+            end-placeholder="End Date"
+            default-value="2010-10-01"
           >
-            <option value="">Last 7 days</option>
-          </select>
+          </el-date-picker>
         </div>
 
         <div class="chart-section">
@@ -88,12 +93,18 @@ import BranchPerformanceTable from '../sections/BranchPerformanceTable'
 import RewardsPerformanceTable from '../sections/RewardsPerformanceTable'
 export default {
   name: 'MainLayout',
+  data () {
+    return {
+      value2: ''
+    }
+  },
   components: {
     NavBar,
     Panels,
     Chart,
     BranchPerformanceTable,
     RewardsPerformanceTable
-  }
+  },
+
 }
 </script>

@@ -139,7 +139,48 @@ export default {
       isPanel4: false
     }
   },
+  mounted () {
+    this.getSales
+    this.getEngagement
+    this.getAcquisitionData
+  },
   methods: {
+    async getSales () {
+      try {
+        const response = await axios.get('/sales');
+        this.tableData = response.data
+        console.log(response);
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    async getEngagement () {
+      try {
+        const response = await axios.get('/engagement');
+        this.tableData = response.data
+        console.log(response);
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    async getAcquisitionData () {
+      try {
+        const response = await axios.get('/acquisition');
+        this.tableData = response.data
+        console.log(response);
+      } catch (error) {
+        console.error(error);
+      }
+    },
+    async getRewards () {
+      try {
+        const response = await axios.get('/rewards');
+        this.tableData = response.data
+        console.log(response);
+      } catch (error) {
+        console.error(error);
+      }
+    },
     selectedPanel (panel) {
       switch (panel) {
         case 1:
