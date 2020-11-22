@@ -53,7 +53,7 @@
 
         <div class="tables-section">
           <div class="row tables">
-            <div class="col-sm ">
+            <div class="col-xl-6 col-md-6 col-sm-12">
               <div class="datatable">
                 <div class="title">
                   <span>Branch Performance</span>
@@ -66,7 +66,7 @@
               </div>
 
             </div>
-            <div class="col-sm">
+            <div class="col-xl-6 col-md-6 col-sm-12">
               <div class="datatable">
                 <div class="title">
                   <span>Rewards Performance</span>
